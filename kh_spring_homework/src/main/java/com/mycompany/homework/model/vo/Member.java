@@ -2,7 +2,11 @@ package com.mycompany.homework.model.vo;
 
 import java.util.Date;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Member {
+//	view page name을 기준으로 작성
 	private String memberId;
 	private String memberPwd;
 	private String memberName;

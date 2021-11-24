@@ -9,9 +9,10 @@
 		<result property="date" column="MEMBER_ENROLL_DT" />
 	</resultMap>
 
-	<insert id="signUp">
+	<insert id="signUp" parameterType="Member">
+	<!-- 파라미터 타입: haspmap of vo -->
 		INSERT INTO MEMBER (MEMBER_ID, MEMBER_PWD, MEMBER_NM, MEMBER_ENROLL_DT)
-		VALUES (#{memberId}, #{memberPwd}, #{memberName}, SYSDATE)
+		VALUES (#{memberId}, #{memberPwd}, #{memberName}, DEFAULT)
 	</insert>
 
 </mapper>

@@ -9,3 +9,4 @@
 *.class
 /target
 *.properties
+*.classpath
