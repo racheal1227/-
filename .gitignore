@@ -7,3 +7,5 @@
 *.tar.gz
 
 *.class
+/target
+*.properties
