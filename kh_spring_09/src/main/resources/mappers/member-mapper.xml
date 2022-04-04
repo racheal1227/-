@@ -9,7 +9,7 @@
       <result property="memberEnrollDate" column="MEMBER_ENROLL_DT"/>
       </resultMap>
       
-      <select id="idCheck" parameterType="string" resultType="Member">
-        	SELECT ID FROM MEMBER WHERE ID = #{memberId}
+      <select id="idCheck" parameterType="string" resultType="_int">
+        	SELECT COUNT(MEMBER_ID) FROM MEMBER WHERE MEMBER_ID = #{memberId}
       </select>
 </mapper>
